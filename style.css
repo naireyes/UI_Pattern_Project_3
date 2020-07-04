@@ -2,34 +2,38 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    font-family: 'Fredoka One', cursive;
-    color: rgb(241, 235, 235);
+    font-family: 'Notable', sans-serif;
+    color: black;
     background-repeat: no-repeat;
     background-size: auto;
 }
 
 #banner {
-    background-color: rgb(117, 121, 118);
+    background-color: rgb(206, 201, 201);
     height: 5em;
     margin: 0;
 }
 
 h1 {
     text-align: center;
-    height: 25px;
+    height: 1.5em;
+    margin-top: 0;
+    padding-top: .4em;
+
 }
 
 .images {
     max-width: 1000px;
-    position: relative;
-    margin: auto;
-    color: black
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
     width: 5em;
+    padding-top: .3em;
 
 }
 
@@ -52,6 +56,13 @@ li {
 }
 
 img {
-    opacity: 0.5;
+    opacity: 0.4;
+    width: 100vw;
 
+}
+
+.maybelline {
+    width: 20em;
+    height: 20em;
+    opacity: 1;
 }
