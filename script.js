@@ -1,38 +1,42 @@
 // const apiKey = 'vL6U1HWoZmZcIF0ETK84r2Lny3ObVHhtuGUpMN_7YgI'
-const url = 'https://dog.ceo/api/breed/chow/images'
+const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl';
 
 fetch(url)
     .then(res => res.json())
     .then(convertedResponse => {
         console.log(convertedResponse)
+        // console.log(convertedResponse)
+
+
     })
     .catch(err => {
         console.log("Something went wrong", err)
     })
 
-let i;
 
-let slides = document.querySelector("chow-image");
+// let i;
 
-let dots = document.querySelector("dot");
+// let slides = document.querySelector("chow-image");
 
-for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
+// let dots = document.querySelector("dot");
 
-slideIndex++;
+// for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+// }
 
-if (slideIndex > slides.length) {
-    slideIndex = 1;
-}
+// slideIndex++;
 
-for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.
-    replace(" active", "");
-}
+// if (slideIndex > slides.length) {
+//     slideIndex = 1;
+// }
 
-slides[slideIndex - 1].style.display = "block";
-dots[slideIndex - 1].className += " active";
+// for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.
+//     replace(" active", "");
+// }
+
+// slides[slideIndex - 1].style.display = "block";
+// dots[slideIndex - 1].className += " active";
 
 // // Change image every 2 seconds 
 // setTimeout(showSlides, 2000);  
