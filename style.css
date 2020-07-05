@@ -32,7 +32,7 @@ h1 {
     display: inline-flex;
     flex-direction: row;
     width: 5em;
-    padding-top: 2em;
+    padding-top: 1.5em;
 
 }
 
@@ -57,10 +57,10 @@ img {
 }
 
 .maybelline {
-    width: 25em;
-    height: 25em;
+    width: 23em;
+    height: 23em;
     opacity: 1;
-    padding-top: 3em;
+    padding-top: 1em;
 
 }
 
@@ -78,8 +78,11 @@ img {
     color: rgb(36, 35, 35);
     font-size: 2em;
     height: 7em;
-    width: 5em;
-    margin-left: 6em;
+    width: 3em;
+    margin-left: 3em;
+    margin-top: 3em;
+    font-family: 'Notable', sans-serif;
+
     /* display: inline-block; */
     flex: 2
 }
@@ -95,6 +98,6 @@ span {
     margin-top: 25em;
 }
 
-.product-info {
-    flex: 1;
+.product-name {
+    font-weight: 900;
 }
