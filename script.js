@@ -5,20 +5,14 @@ fetch(url)
     .then(res => res.json())
     .then(convertedResponse => {
         console.log(convertedResponse)
-        console.log(convertedResponse.name)
         let results = convertedResponse;
-        for (i = 0; i < convertedResponse.length; i++) {
+        for (i = 0; i < results.length; i++) {
             let p = document.querySelector("p");
-            p.innerHTML = convertedResponse[i].name
-            document.querySelector('#makeup').appendChild(p)
-
-            let image_link = (convertedResponse[i].image_link)
+            p.innerHTML = results[i].name
+            document.querySelector('.product-info').appendChild(p)
+            let image_link = (results[i].image_link)
             let image = document.querySelector(".maybelline").src = image_link
-            // document.querySelector('#makeup').appendChild(image).src
-
         }
-
-
     })
     .catch(err => {
         console.log("Something went wrong", err)
@@ -34,7 +28,7 @@ function plusDivs(n) {
 
 function showImgs(n) {
     let i;
-    let x = document.getElementsByClassName("maybelline");
+    let x = document.getElementsByClassName("product-info");
     if (n > x.length) {
         slideIndex = 1
     }
