@@ -5,12 +5,16 @@ fetch(url)
     .then(res => res.json())
     .then(convertedResponse => {
         console.log(convertedResponse)
-        console.log(convertedResponse.brand)
+        console.log(convertedResponse.name)
         let results = convertedResponse;
         for (i = 0; i < convertedResponse.length; i++) {
-            let h2 = document.createElement('h2')
-            // h2.innerHTML = convertedResponse[i].brand
-            // document.querySelector('#makeup').appendChild(h2)
+            let p = document.querySelector("p");
+            p.innerHTML = convertedResponse[i].name
+            document.querySelector('#makeup').appendChild(p)
+
+            let image_link = (convertedResponse[i].image_link)
+            let image = document.querySelector(".maybelline").src = image_link
+            // document.querySelector('#makeup').appendChild(image).src
 
         }
 

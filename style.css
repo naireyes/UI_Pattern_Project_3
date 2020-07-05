@@ -9,7 +9,7 @@ body {
 }
 
 #banner {
-    background-color: rgb(151, 148, 148);
+    background-color: rgb(192, 113, 179);
     height: 5em;
     margin: 0;
 }
@@ -52,7 +52,7 @@ li {
 }
 
 img {
-    opacity: 0.2;
+    opacity: 0.3;
     width: 100vw;
     position: absolute;
 
@@ -71,7 +71,16 @@ img {
     height: 28em;
     opacity: 1;
     padding-top: 3em;
+
 }
+
+.product-info {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+
 
 .spotlight {
     color: rgb(36, 35, 35);
@@ -87,4 +96,9 @@ span {
     color: rgb(41, 41, 138);
 
 
+}
+
+.button {
+    display: flex;
+    margin-top: 25em;
 }
