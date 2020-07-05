@@ -5,7 +5,14 @@ fetch(url)
     .then(res => res.json())
     .then(convertedResponse => {
         console.log(convertedResponse)
-        // console.log(convertedResponse)
+        console.log(convertedResponse.brand)
+        let results = convertedResponse;
+        for (i = 0; i < convertedResponse.length; i++) {
+            let h2 = document.createElement('h2')
+            // h2.innerHTML = convertedResponse[i].brand
+            // document.querySelector('#makeup').appendChild(h2)
+
+        }
 
 
     })
