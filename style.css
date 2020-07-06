@@ -33,7 +33,7 @@ h1 {
     flex-direction: row;
     width: 5em;
     padding-top: 1em;
-    margin-left: 33%;
+    margin-left: 38%;
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
 
@@ -72,9 +72,8 @@ img {
     font-family: 'Merriweather', serif;
     display: flex;
     background-color: black;
-    padding: 5em 0 2em 9em;
-
-
+    padding: 8em 0 2em 25%;
+    height: 60%;
 }
 
 .spotlight {
@@ -82,7 +81,7 @@ img {
     font-size: 2em;
     height: 7em;
     width: 3em;
-    margin-left: 5em;
+    margin-left: 4em;
     font-family: 'Notable', sans-serif;
     flex: 2
 }
@@ -98,6 +97,7 @@ img {
 span {
     color: #8c66c4;
     padding-top: 2em;
+    line-height: 25%;
 
 
 }
@@ -105,11 +105,6 @@ span {
 .button {
     display: flex;
     margin-top: 25em;
-}
-
-.product-name {
-    font-weight: 900;
-    color: white;
 }
 
 .footer {
@@ -133,13 +128,15 @@ span {
     font-family: 'Noto Sans JP', sans-serif;
     width: 15em;
     margin-left: 1.8em;
+    font-weight: 900;
+    color: white;
 }
 
 .fa {
-    margin-left: 25em;
+    margin-left: 45%;
 }
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
 
     .container {
         display: flex;
@@ -204,5 +201,4 @@ span {
 
     h1 {
         font-size: 2.5em;
-    }
-}
+    } */
