@@ -71,7 +71,6 @@ img {
     text-align: center;
     font-family: 'Merriweather', serif;
     display: flex;
-    /* margin: 5% 0 5% 5%; */
     background-color: black;
     padding: 5em 0 2em 9em;
 
@@ -85,8 +84,6 @@ img {
     width: 3em;
     margin-left: 5em;
     font-family: 'Notable', sans-serif;
-
-    /* display: inline-block; */
     flex: 2
 }
 
@@ -143,9 +140,69 @@ span {
 }
 
 @media (max-width: 767.98px) {
-    ...
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 0em;
+    }
+
+    .product-name {
+        padding-left: 20%;
+    }
+
+    .fa {
+        margin-left: 25%;
+    }
+
+    .spotlight {
+        margin-left: 20%;
+    }
+
+    .maybelline {
+        padding-left: 5%;
+    }
+
+    .navbar {
+        margin-left: 15%;
+    }
+
+
 }
 
-@media (max-width: 991.98px) {
-    ...
+
+
+@media (max-width:984.98px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 0em;
+    }
+
+    .product-name {
+        padding-left: 20%;
+    }
+
+    .fa {
+        margin-left: 25%;
+    }
+
+    .spotlight {
+        margin-left: 20%;
+    }
+
+    .maybelline {
+        padding-left: 5%;
+    }
+
+    .navbar {
+        padding-top: 10%;
+        margin-left: 15%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
 }
